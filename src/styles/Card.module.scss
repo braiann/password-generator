@@ -1,0 +1,32 @@
+.card {
+    padding: 30px;
+    padding-top: 0;
+    background-color: white;
+    border-radius: 20px;
+
+    .password {
+        background-color: orange;
+        padding: 10px 20px;
+        translate: 0 -20px;
+        border-radius: 20px
+    }
+
+    .parameters {
+        display: flex;
+        flex-direction: column;
+
+        .lengthSlider {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            span {
+                text-align: right;
+            }
+
+            input {
+                grid-column: 1/3;
+            }
+        }
+    }
+}

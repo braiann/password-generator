@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(46, 23, 74);
+    overflow: hidden;
+    background-image: url('./../resources/bg-blurred.jpg');
+}
+
+main {
+    position: relative;
+    padding: 0;
+    min-height: calc(100vh);
+    display: grid;
+    place-content: center;
+
+    * {
+        z-index: 5;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        translate: -15% 20%;
+        border-radius: 400px;
+        animation-name: rotation;
+        animation-duration: 200s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        background-image: url('./../resources/bg.jpg');
+        background-size: cover;
+        aspect-ratio: 1;
+        z-index: 2;
+        filter: blur(80px);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        
+        translate: 45%;
+        border-radius: 400px;
+        animation-name: backwards;
+        animation-duration: 150s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        background-image: url('./../resources/bg.jpg');
+        background-size: cover;
+        aspect-ratio: 1;
+        filter: blur(80px);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        rotate: 45deg;
+        opacity: 0;
+    }
+    5% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0.6;
+        rotate: 225deg;
+    }
+    96% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        rotate: 45deg
+    }
+}
+
+@keyframes backwards {
+    0% {
+        rotate: 0deg;
+        opacity: 0
+    }
+    5% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0.8;
+        rotate: 0deg
+    }
+    96% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        rotate: -365deg
+    }
+}
