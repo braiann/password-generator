@@ -20,9 +20,9 @@ main {
     display: grid;
     place-content: center;
 
-    * {
-        z-index: 5;
-    }
+    // * {
+    //     z-index: 5;
+    // }
 
     &::before {
         content: '';
@@ -37,15 +37,14 @@ main {
         background-image: url('./../resources/bg.jpg');
         background-size: cover;
         aspect-ratio: 1;
-        z-index: 2;
         filter: blur(80px);
+        z-index: -1;
     }
 
     &::after {
         content: '';
         position: absolute;
         width: 100vw;
-        
         translate: 45%;
         border-radius: 400px;
         animation-name: backwards;
@@ -56,6 +55,7 @@ main {
         background-size: cover;
         aspect-ratio: 1;
         filter: blur(80px);
+        z-index: -1;
     }
 }
 

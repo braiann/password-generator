@@ -18,6 +18,7 @@ $green: rgb(0,204,102);
         inset -2px -2px 0px $card-border;
     border-radius: 20px;
     color: rgba(255, 255, 255, 0.82);
+    width: min(500px, calc(100vw - 20px));
 
     .password {
         background: rgb(156,13,56);
@@ -26,20 +27,24 @@ $green: rgb(0,204,102);
         background-position: bottom left;
         color: white;
         padding: 10px 10px 10px 20px;
-        translate: 0 -20px;
+        translate: -50% -20px;
         border-radius: 20px;
         position: relative;
         display: flex;
         align-items: center;
+        width: fit-content;
+        left: 50%;
         box-shadow:
             inset 2px 2px 0px $card-border,
             inset -2px 2px 0px $red,
             inset 2px -2px 0px $red,
             inset -2px -2px 0px $card-border,
             0 5px 10px $active-color;
-
+        transition: background-position 1s ease-in-out;
+        
         h2 {
             font-size: 2rem;
+            font-family: monospace;
         }
 
         label {
@@ -54,6 +59,9 @@ $green: rgb(0,204,102);
 
         .options {
             margin-left: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
             button {
                 border: none;
                 background-color: transparent;
@@ -95,6 +103,7 @@ $green: rgb(0,204,102);
                 width: 1.7rem;
                 height: 1rem;
                 border-radius: 10px;
+                transition: background-color 0.3s ease-in-out;
 
                 .bubble {
                     background-color: white;
@@ -103,6 +112,16 @@ $green: rgb(0,204,102);
                     border-radius: 10px;
                     box-shadow: 0 1px 1px $active-color,
                     inset 0 -1px 1px $active-color;
+                    transition:
+                        translate 0.3s ease-in-out,
+                }
+
+                &.toggled {
+                    background-color: $green;
+
+                    .bubble {
+                        translate: 0.7rem;
+                    }
                 }
             }
         }
