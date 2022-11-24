@@ -41,6 +41,7 @@ $green: rgb(0,204,102);
             inset -2px -2px 1px $card-border,
             0 5px 10px $active-color;
         transition: background-position 1s ease-in-out;
+        word-break: break-all;
         
         h2 {
             font-size: 2rem;
