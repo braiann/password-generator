@@ -12,10 +12,10 @@ $green: rgb(0,204,102);
     padding-top: 0;
     background-color: $card-background;
     box-shadow:
-        inset 2px 2px 0px $card-border,
-        inset -2px 2px 0px rgb(46, 23, 74),
-        inset 2px -2px 0px rgb(46, 23, 74),
-        inset -2px -2px 0px $card-border;
+        inset 2px 2px 1px $card-border,
+        inset -2px 2px 1px rgb(46, 23, 74),
+        inset 2px -2px 1px rgb(46, 23, 74),
+        inset -2px -2px 1px $card-border;
     border-radius: 20px;
     color: rgba(255, 255, 255, 0.82);
     width: min(500px, calc(100vw - 20px));
@@ -35,10 +35,10 @@ $green: rgb(0,204,102);
         width: fit-content;
         left: 50%;
         box-shadow:
-            inset 2px 2px 0px $card-border,
-            inset -2px 2px 0px $red,
-            inset 2px -2px 0px $red,
-            inset -2px -2px 0px $card-border,
+            inset 2px 2px 1px $card-border,
+            inset -2px 2px 1px $green,
+            inset 2px -2px 1px $green,
+            inset -2px -2px 1px $card-border,
             0 5px 10px $active-color;
         transition: background-position 1s ease-in-out;
         

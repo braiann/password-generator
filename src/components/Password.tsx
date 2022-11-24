@@ -101,9 +101,9 @@ function getStrengthColor(strength: Strength) {
 }
 
 function getShadow(strength: Strength) {
-   return `inset 2px 2px 0px rgba(255, 255, 255, 0.3),
-           inset -2px 2px 0px ${getStrengthColor(strength)},
-           inset 2px -2px 0px ${getStrengthColor(strength)},
-           inset -2px -2px 0px rgba(255, 255, 255, 0.3),
+   return `inset 2px 2px 1px rgba(255, 255, 255, 0.3),
+           inset -2px 2px 1px ${getStrengthColor(strength)},
+           inset 2px -2px 1px ${getStrengthColor(strength)},
+           inset -2px -2px 1px rgba(255, 255, 255, 0.3),
            0 5px 10px rgba(0, 0, 0, 0.1)`
 }
