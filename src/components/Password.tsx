@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Checkmark, Copy, Refresh } from "../resources/icons/Icons"
 import style from "./../styles/Card.module.scss"
 
 type PasswordProps = {
@@ -49,12 +50,12 @@ export default function Password({password, generatePassword}: PasswordProps) {
         </label>
         <div className={style.options}>
             <button onClick={generatePassword}>
-                <span className="material-symbols-rounded">autorenew</span>
+                <Refresh />
             </button>
             <button onClick={copyToClipboard}>
             {showCheckmark ?
-                <span className="material-symbols-outlined">done</span> :
-                <span className="material-symbols-rounded">content_copy</span>
+                <Checkmark /> :
+                <Copy />
             }
             </button>
         </div>

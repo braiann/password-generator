@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1024" height="1024"><svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1024 1024" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient gradientTransform="matrix(1 0 0 1 0 0)" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient1003" x1="103.251" x2="905.946" y1="512" y2="512">
+<stop offset="0" stop-color="#c570ff"></stop>
+<stop offset="0.997055" stop-color="#55d3ff"></stop>
+</linearGradient>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="994.063" id="SvgjsFilter1002" width="1012.69" x="18.7572" y="35.4746">
+<feDropShadow dx="20.5061" dy="20.5061" flood-color="#05526b" flood-opacity="0.553319" in="SourceGraphic" result="Shadow" stdDeviation="50"></feDropShadow>
+</filter>
+</defs>
+<clipPath id="SvgjsClipPath1001">
+<rect height="1024" width="1024" x="0" y="0"></rect>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="SvgjsG1000">
+<path d="M719.942 820.943L735.851 902.951L905.946 904.032L895.528 810.589L515.487 438.454L511.381 415.312C516.049 392.993 516.049 392.993 516.049 392.993C516.049 392.993 552.658 261.855 444.228 171.386C335.799 80.917 213.225 126.149 161.673 182.672C110.122 239.195 59.064 392.559 166.446 483.415C273.828 574.271 367.205 540.103 367.205 540.103L384.729 551.293L482.15 648.616L545.372 649.127L565.825 722.274L623.874 726.688L655.327 811.886L719.942 820.943Z" fill="url(#LinearGradient)" fill-rule="nonzero" filter="url(#Filter)" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-opacity="0.323015" stroke-width="10"></path>
+<path d="M944.266 463.017L589.829 502.478" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none"></path>
+<path d="M529.211 522.931" fill="#000000" fill-rule="nonzero" opacity="1" stroke="none"></path>
+</g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+</style></svg>

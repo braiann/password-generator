@@ -45,6 +45,7 @@ $green: rgb(0,204,102);
         h2 {
             font-size: 2rem;
             font-family: monospace;
+            font-family: 'Anonymous Pro', monospace;
         }
 
         label {
@@ -69,6 +70,14 @@ $green: rgb(0,204,102);
                 width: 2rem;
                 color: white;
                 border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                    fill: white;
+                    width: 1.8rem;
+                }
 
                 &:hover {
                     background-color: $hover-color;

@@ -23,7 +23,7 @@ export default function Card() {
     })
 
     useEffect(() => {
-        if (!parameters.uppercase && !parameters.lowercase && !parameters.numbers && !parameters.symbols) {
+        if (!parameters.uppercase && !parameters.lowercase && !parameters.numbers) {
             setParameters(prev => {
                 return {
                     ...prev,
@@ -37,13 +37,11 @@ export default function Card() {
     const generatePassword = () => {
         let generatedPassword = ""
         let useUppercase = false
-        let useLowercase = false
-        let useNumber = false
         for (let i = 0; i < parameters.length; i++) {
             if (parameters.symbols &&(i + 1) % 5 === 0 && i < parameters.length - 1) {
                 generatedPassword += "-"
             } else {
-                if (parameters.numbers && Math.round(Math.random()) == 0) {
+                if ((!parameters.uppercase && !parameters.lowercase) || parameters.numbers && Math.round(Math.random()) == 0) {
                     generatedPassword += Math.floor(Math.random() * 10)
                 } else {
                     useUppercase = parameters.lowercase ? Math.round(Math.random()) === 0 : true
